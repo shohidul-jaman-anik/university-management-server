@@ -8,7 +8,7 @@ const createUsers = async (user: IUsers): Promise<IUsers | null> => {
   const id = await generateUserId()
 
   user.id = id
-  
+
   // Default Password
   if (!user.password) {
     user.password = config.default_user_pass as string
