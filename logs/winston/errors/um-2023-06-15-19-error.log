@@ -1,0 +1,6 @@
+{
+  message: 'Failed to connect Database TypeError: app_1.default.listen is not a function',
+  level: 'error',
+  label: 'UM😊',
+  timestamp: '2023-06-15T13:05:32.932Z'
+}

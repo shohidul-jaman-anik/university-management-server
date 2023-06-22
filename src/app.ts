@@ -2,6 +2,7 @@ import cors from 'cors'
 import express, { Application, NextFunction, Request, Response } from 'express'
 const app: Application = express()
 
+import globalErrorHandler from './app/middlewares/globalErrorHandler'
 import usersRouter from './app/modules/users/user.route'
 // const port = 5000
 
@@ -14,20 +15,7 @@ app.use(express.urlencoded({ extended: true }))
 // Application Routes
 app.use('/api/v1/users/', usersRouter)
 
-class ApiError extends Error {
-  statusCode: number
-  constructor(statusCode: number, message: stirng | undefined, stack = '') {
-    super(message)
-    this.statusCode = statusCode
-    if (stack) {
-      this.stack = stack
-    } else {
-      Error.captureStackTrace(this, this.constructor)
-    }
-  }
-}
-
-app.get('/', (req: Request, res: Response,next:NextFunction) => {
+app.get('/', (req: Request, res: Response, next: NextFunction) => {
   // await usersService.createUsers({
   //   id: '999',
   //   password: '1235',
@@ -35,11 +23,12 @@ app.get('/', (req: Request, res: Response,next:NextFunction) => {
   // })
   // res.send('Working Successfully!')
 
-  throw new ApiError(400,'Ore baba error !')
- 
+  // throw new ApiError(400,'Ore baba error !')
+  next('Ore baba error !')
 })
 
-
-
+// Global Error Handler
+app.use(globalErrorHandler)
 
 export default app
+
