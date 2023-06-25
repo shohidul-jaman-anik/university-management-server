@@ -1,0 +1,104 @@
+{
+  issues: [
+    {
+      received: '01',
+      code: 'invalid_enum_value',
+      options: [ 'Autumn', 'Summer', 'Fall' ],
+      path: [ 'body', 'code' ],
+      message: "Invalid enum value. Expected 'Autumn' | 'Summer' | 'Fall', received '01'"
+    }
+  ],
+  addIssue: [Function (anonymous)],
+  addIssues: [Function (anonymous)],
+  name: 'ZodError',
+  level: 'error',
+  message: '🔴 globalErrorHandler ~ [\n' +
+    '  {\n' +
+    '    "received": "01",\n' +
+    '    "code": "invalid_enum_value",\n' +
+    '    "options": [\n' +
+    '      "Autumn",\n' +
+    '      "Summer",\n' +
+    '      "Fall"\n' +
+    '    ],\n' +
+    '    "path": [\n' +
+    '      "body",\n' +
+    '      "code"\n' +
+    '    ],\n' +
+    `    "message": "Invalid enum value. Expected 'Autumn' | 'Summer' | 'Fall', received '01'"\n` +
+    '  }\n' +
+    ']',
+  stack: 'ZodError: [\n' +
+    '  {\n' +
+    '    "received": "01",\n' +
+    '    "code": "invalid_enum_value",\n' +
+    '    "options": [\n' +
+    '      "Autumn",\n' +
+    '      "Summer",\n' +
+    '      "Fall"\n' +
+    '    ],\n' +
+    '    "path": [\n' +
+    '      "body",\n' +
+    '      "code"\n' +
+    '    ],\n' +
+    `    "message": "Invalid enum value. Expected 'Autumn' | 'Summer' | 'Fall', received '01'"\n` +
+    '  }\n' +
+    ']\n' +
+    '    at Object.get error [as error] (C:\\Next Level Course\\UniversityManagement\\UniversityManagementServer\\node_modules\\zod\\lib\\types.js:43:31)\n' +
+    '    at ZodObject.parseAsync (C:\\Next Level Course\\UniversityManagement\\UniversityManagementServer\\node_modules\\zod\\lib\\types.js:164:22)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  label: 'UM😊',
+  timestamp: '2023-06-25T20:31:51.471Z'
+}
+{
+  issues: [
+    {
+      received: '04',
+      code: 'invalid_enum_value',
+      options: [ '01', '02', '03' ],
+      path: [ 'body', 'code' ],
+      message: "Invalid enum value. Expected '01' | '02' | '03', received '04'"
+    }
+  ],
+  addIssue: [Function (anonymous)],
+  addIssues: [Function (anonymous)],
+  name: 'ZodError',
+  level: 'error',
+  message: '🔴 globalErrorHandler ~ [\n' +
+    '  {\n' +
+    '    "received": "04",\n' +
+    '    "code": "invalid_enum_value",\n' +
+    '    "options": [\n' +
+    '      "01",\n' +
+    '      "02",\n' +
+    '      "03"\n' +
+    '    ],\n' +
+    '    "path": [\n' +
+    '      "body",\n' +
+    '      "code"\n' +
+    '    ],\n' +
+    `    "message": "Invalid enum value. Expected '01' | '02' | '03', received '04'"\n` +
+    '  }\n' +
+    ']',
+  stack: 'ZodError: [\n' +
+    '  {\n' +
+    '    "received": "04",\n' +
+    '    "code": "invalid_enum_value",\n' +
+    '    "options": [\n' +
+    '      "01",\n' +
+    '      "02",\n' +
+    '      "03"\n' +
+    '    ],\n' +
+    '    "path": [\n' +
+    '      "body",\n' +
+    '      "code"\n' +
+    '    ],\n' +
+    `    "message": "Invalid enum value. Expected '01' | '02' | '03', received '04'"\n` +
+    '  }\n' +
+    ']\n' +
+    '    at Object.get error [as error] (C:\\Next Level Course\\UniversityManagement\\UniversityManagementServer\\node_modules\\zod\\lib\\types.js:43:31)\n' +
+    '    at ZodObject.parseAsync (C:\\Next Level Course\\UniversityManagement\\UniversityManagementServer\\node_modules\\zod\\lib\\types.js:164:22)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  label: 'UM😊',
+  timestamp: '2023-06-25T20:41:11.865Z'
+}
