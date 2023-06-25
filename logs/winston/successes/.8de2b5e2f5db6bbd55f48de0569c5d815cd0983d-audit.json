@@ -6,16 +6,6 @@
     "auditLog": "C:\\Next Level Course\\UniversityManagement\\UniversityManagementServer\\logs\\winston\\successes\\.8de2b5e2f5db6bbd55f48de0569c5d815cd0983d-audit.json",
     "files": [
         {
-            "date": 1686502440755,
-            "name": "C:\\Next Level Course\\UniversityManagement\\UniversityManagementServer\\logs\\winston\\successes\\um-2023-06-11-22-success.log",
-            "hash": "f2a082e94274e53d47fd950636555d7358024ee4fae2bac78e379f22f93efff1"
-        },
-        {
-            "date": 1686502825972,
-            "name": "C:\\Next Level Course\\UniversityManagement\\UniversityManagementServer\\logs\\winston\\successes\\um-2023-06-11-23-success.log",
-            "hash": "7cbe3e7b195d65b061c2572af3861c9d6573baf6865fba4c0484efd9d60114c6"
-        },
-        {
             "date": 1686558955868,
             "name": "C:\\Next Level Course\\UniversityManagement\\UniversityManagementServer\\logs\\winston\\successes\\um-2023-06-12-14-success.log",
             "hash": "e1dc47c7dc78312e27340276ebaf4b7fe0487a30bf76018910e998d778a18ea1"
@@ -164,6 +154,11 @@
             "date": 1687709254173,
             "name": "C:\\Next Level Course\\UniversityManagement\\UniversityManagementServer\\logs\\winston\\successes\\um-2023-06-25-22-success.log",
             "hash": "87e3215c53f88825711ecd03beda0544bad4cad04294ac4478b69c1fc51a59de"
+        },
+        {
+            "date": 1687713644106,
+            "name": "C:\\Next Level Course\\UniversityManagement\\UniversityManagementServer\\logs\\winston\\successes\\um-2023-06-25-23-success.log",
+            "hash": "2eb4b0e7a317ff0b0945fd9fff96753c1ff93859533814f6480b4df107c4f6b4"
         }
     ],
     "hashType": "sha256"
