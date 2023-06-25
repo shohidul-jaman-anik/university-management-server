@@ -1,0 +1,22 @@
+{
+  level: 'error',
+  label: 'UM😊',
+  timestamp: '2023-06-23T06:09:24.209Z'
+}
+{
+  level: 'error',
+  message: '🔴 globalErrorHandler ~ Testing Error logger !',
+  stack: 'Error: Testing Error logger !\n' +
+    '    at C:\\Next Level Course\\UniversityManagement\\UniversityManagementServer\\src\\app.ts:27:9\n' +
+    '    at Layer.handle [as handle_request] (C:\\Next Level Course\\UniversityManagement\\UniversityManagementServer\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Next Level Course\\UniversityManagement\\UniversityManagementServer\\node_modules\\express\\lib\\router\\route.js:144:13)\n' +
+    '    at Route.dispatch (C:\\Next Level Course\\UniversityManagement\\UniversityManagementServer\\node_modules\\express\\lib\\router\\route.js:114:3)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Next Level Course\\UniversityManagement\\UniversityManagementServer\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Next Level Course\\UniversityManagement\\UniversityManagementServer\\node_modules\\express\\lib\\router\\index.js:284:15\n' +
+    '    at Function.process_params (C:\\Next Level Course\\UniversityManagement\\UniversityManagementServer\\node_modules\\express\\lib\\router\\index.js:346:12)\n' +
+    '    at next (C:\\Next Level Course\\UniversityManagement\\UniversityManagementServer\\node_modules\\express\\lib\\router\\index.js:280:10)\n' +
+    '    at urlencodedParser (C:\\Next Level Course\\UniversityManagement\\UniversityManagementServer\\node_modules\\body-parser\\lib\\types\\urlencoded.js:91:7)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Next Level Course\\UniversityManagement\\UniversityManagementServer\\node_modules\\express\\lib\\router\\layer.js:95:5)',
+  label: 'UM😊',
+  timestamp: '2023-06-23T06:31:38.005Z'
+}

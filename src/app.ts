@@ -3,7 +3,7 @@ import express, { Application, NextFunction, Request, Response } from 'express'
 const app: Application = express()
 
 import globalErrorHandler from './app/middlewares/globalErrorHandler'
-import usersRouter from './app/modules/users/user.route'
+import { UserRoutes } from './app/modules/user/user.route'
 // const port = 5000
 
 app.use(cors())
@@ -13,22 +13,18 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
 // Application Routes
-app.use('/api/v1/users/', usersRouter)
+app.use('/api/v1/users/', UserRoutes)
 
 app.get('/', (req: Request, res: Response, next: NextFunction) => {
-  // await usersService.createUsers({
-  //   id: '999',
-  //   password: '1235',
-  //   role: 'Student',
-  // })
-  // res.send('Working Successfully!')
 
   // throw new ApiError(400,'Ore baba error !')
-  next('Ore baba error !')
+  // throw new Error('Testing Error logger !')
+  // next('Ore baba error !')
+
+  // Promise.reject(new Error('Unhandle promise rejection'))
 })
 
 // Global Error Handler
 app.use(globalErrorHandler)
 
 export default app
-
