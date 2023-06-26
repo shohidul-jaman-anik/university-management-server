@@ -1,0 +1,70 @@
+{
+  issues: [
+    {
+      received: 'Summmer',
+      code: 'invalid_enum_value',
+      options: [ 'Autumn', 'Summer', 'Fall' ],
+      path: [ 'body', 'title' ],
+      message: "Invalid enum value. Expected 'Autumn' | 'Summer' | 'Fall', received 'Summmer'"
+    }
+  ],
+  addIssue: [Function (anonymous)],
+  addIssues: [Function (anonymous)],
+  name: 'ZodError',
+  level: 'error',
+  message: '🔴 globalErrorHandler ~ [\n' +
+    '  {\n' +
+    '    "received": "Summmer",\n' +
+    '    "code": "invalid_enum_value",\n' +
+    '    "options": [\n' +
+    '      "Autumn",\n' +
+    '      "Summer",\n' +
+    '      "Fall"\n' +
+    '    ],\n' +
+    '    "path": [\n' +
+    '      "body",\n' +
+    '      "title"\n' +
+    '    ],\n' +
+    `    "message": "Invalid enum value. Expected 'Autumn' | 'Summer' | 'Fall', received 'Summmer'"\n` +
+    '  }\n' +
+    ']',
+  stack: 'ZodError: [\n' +
+    '  {\n' +
+    '    "received": "Summmer",\n' +
+    '    "code": "invalid_enum_value",\n' +
+    '    "options": [\n' +
+    '      "Autumn",\n' +
+    '      "Summer",\n' +
+    '      "Fall"\n' +
+    '    ],\n' +
+    '    "path": [\n' +
+    '      "body",\n' +
+    '      "title"\n' +
+    '    ],\n' +
+    `    "message": "Invalid enum value. Expected 'Autumn' | 'Summer' | 'Fall', received 'Summmer'"\n` +
+    '  }\n' +
+    ']\n' +
+    '    at Object.get error [as error] (C:\\Next Level Course\\UniversityManagement\\UniversityManagementServer\\node_modules\\zod\\lib\\types.js:43:31)\n' +
+    '    at ZodObject.parseAsync (C:\\Next Level Course\\UniversityManagement\\UniversityManagementServer\\node_modules\\zod\\lib\\types.js:164:22)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  label: 'UM😊',
+  timestamp: '2023-06-26T14:04:00.369Z'
+}
+{
+  statusCode: 400,
+  level: 'error',
+  message: '🔴 globalErrorHandler ~ Invalid semester code !',
+  stack: 'Error: Invalid semester code !\n' +
+    '    at C:\\Next Level Course\\UniversityManagement\\UniversityManagementServer\\src\\app\\modules\\academicSemester\\academicSemester.service.ts:11:11\n' +
+    '    at Generator.next (<anonymous>)\n' +
+    '    at C:\\Next Level Course\\UniversityManagement\\UniversityManagementServer\\src\\app\\modules\\academicSemester\\academicSemester.service.ts:8:71\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at __awaiter (C:\\Next Level Course\\UniversityManagement\\UniversityManagementServer\\src\\app\\modules\\academicSemester\\academicSemester.service.ts:4:12)\n' +
+    '    at Object.createSemester (C:\\Next Level Course\\UniversityManagement\\UniversityManagementServer\\src\\app\\modules\\academicSemester\\academicSemester.service.ts:9:33)\n' +
+    '    at C:\\Next Level Course\\UniversityManagement\\UniversityManagementServer\\src\\app\\modules\\academicSemester\\academicSemester.controller.ts:7:50\n' +
+    '    at Generator.next (<anonymous>)\n' +
+    '    at C:\\Next Level Course\\UniversityManagement\\UniversityManagementServer\\src\\app\\modules\\academicSemester\\academicSemester.controller.ts:8:71\n' +
+    '    at new Promise (<anonymous>)',
+  label: 'UM😊',
+  timestamp: '2023-06-26T14:40:56.275Z'
+}
