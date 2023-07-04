@@ -204,6 +204,51 @@
             "date": 1688407286891,
             "name": "C:\\Next Level Course\\UniversityManagement\\UniversityManagementServer\\logs\\winston\\errors\\um-2023-07-04-00-error.log",
             "hash": "f4ed5c92d317e8d100272600b85aa64aa40378a211c6a7dafa442b120aaa4278"
+        },
+        {
+            "date": 1688410924563,
+            "name": "C:\\Next Level Course\\UniversityManagement\\UniversityManagementServer\\logs\\winston\\errors\\um-2023-07-04-01-error.log",
+            "hash": "182f05ed25f707918350edcf4af6ead04d4c9b3c14e5dfd816bab7edf13eeb29"
+        },
+        {
+            "date": 1688455040063,
+            "name": "C:\\Next Level Course\\UniversityManagement\\UniversityManagementServer\\logs\\winston\\errors\\um-2023-07-04-13-error.log",
+            "hash": "a6b2ccc36df02c08cc5428f00bc6152019065dca2bb84e82393d3ad22e204fd5"
+        },
+        {
+            "date": 1688465057057,
+            "name": "C:\\Next Level Course\\UniversityManagement\\UniversityManagementServer\\logs\\winston\\errors\\um-2023-07-04-16-error.log",
+            "hash": "445c38a168fa5c1329be895d0ab232b4c6bc07ad3a41a5a7e4326563881f541d"
+        },
+        {
+            "date": 1688471044987,
+            "name": "C:\\Next Level Course\\UniversityManagement\\UniversityManagementServer\\logs\\winston\\errors\\um-2023-07-04-17-error.log",
+            "hash": "ef8dd699cd5093b4b0b13508d849ce13599b88f8735777578a164b4df90579f6"
+        },
+        {
+            "date": 1688473224142,
+            "name": "C:\\Next Level Course\\UniversityManagement\\UniversityManagementServer\\logs\\winston\\errors\\um-2023-07-04-18-error.log",
+            "hash": "21e82c412ca0f8294c5284b668adeb1e024c302af37db8261c1ccd318f30f3c9"
+        },
+        {
+            "date": 1688479101188,
+            "name": "C:\\Next Level Course\\UniversityManagement\\UniversityManagementServer\\logs\\winston\\errors\\um-2023-07-04-19-error.log",
+            "hash": "6100fd489af289db84a7f857bab0426805f671f597a2076bc93b66fd240bbcb0"
+        },
+        {
+            "date": 1688479601422,
+            "name": "C:\\Next Level Course\\UniversityManagement\\UniversityManagementServer\\logs\\winston\\errors\\um-2023-07-04-20-error.log",
+            "hash": "5eca8be0b048de9141ce5a0c10ce2acdeed012fd966fe4827cbe6150a58a7457"
+        },
+        {
+            "date": 1688486259535,
+            "name": "C:\\Next Level Course\\UniversityManagement\\UniversityManagementServer\\logs\\winston\\errors\\um-2023-07-04-21-error.log",
+            "hash": "e0052c82f15ce49d024d95e59dfcc957643869b2414d28ca44d5ba477f28838a"
+        },
+        {
+            "date": 1688486484792,
+            "name": "C:\\Next Level Course\\UniversityManagement\\UniversityManagementServer\\logs\\winston\\errors\\um-2023-07-04-22-error.log",
+            "hash": "07635498ef666cb70f0817af493cd5e5c9f68c39d7ab569a0d8eb7936454cf30"
         }
     ],
     "hashType": "sha256"

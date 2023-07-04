@@ -1,4 +1,4 @@
-import { SortOrder } from "mongoose";
+import { SortOrder } from 'mongoose';
 
 type IOptions = {
   page?: number;
