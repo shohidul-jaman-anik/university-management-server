@@ -37,7 +37,7 @@ const getAllSemesters = catchAsync(async (req: Request, res: Response) => {
   //   sortBy: req.query.sortBy,
   //   sortOrder: req.query.sortOrder,
   // };
-  const filters=pick(req.query,['searchTerm',])
+  const filters = pick(req.query, ['searchTerm', 'title', 'code', 'year']);
 
   const paginationOptions = pick(req.query, paginationFields);
   const result = await AcademicSemesterService.getAllSemester(

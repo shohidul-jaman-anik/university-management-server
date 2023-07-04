@@ -29,7 +29,7 @@ const getAllSemester = async (
   // const { page = 1, limit = 10 } = paginationOptions;
   // const skip = (page - 1) * limit;
 
-  const { searchTerm } = filters;
+  const { searchTerm, ...filtersData } = filters;
 
   const academicSemesterSearchAbleFields = ['title', 'code', 'year'];
   const andConditons = [];
@@ -41,7 +41,15 @@ const getAllSemester = async (
       })),
     });
   }
-  
+
+  if (Object.keys(filtersData).length) {
+    andConditons.push({
+      $and: Object.entries(filtersData).map(([field, value]) => ({
+        [field]: value,
+      })),
+    });
+  }
+
   // const andConditons = [
   //   {
   //     $or: [
@@ -74,7 +82,10 @@ const getAllSemester = async (
   if (sortBy && sortOrder) {
     sortConditions[sortBy] = sortOrder;
   }
-  const result = await AcademicSemester.find({ $and: andConditons })
+
+  const whereConditions = andConditons.length > 0 ? { $and: andConditons } : {};
+
+  const result = await AcademicSemester.find(whereConditions)
     .sort(sortConditions)
     .skip(skip)
     .limit(limit);
@@ -89,6 +100,8 @@ const getAllSemester = async (
     data: result,
   };
 };
+
+
 
 export const AcademicSemesterService = {
   createSemester,
