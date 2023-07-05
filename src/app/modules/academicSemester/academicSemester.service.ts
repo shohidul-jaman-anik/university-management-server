@@ -101,8 +101,19 @@ const getAllSemester = async (
   };
 };
 
-const getSingleSemester = async (id: string): Promise<IAcademicSemester | null> => {
+const getSingleSemester = async (
+  id: string
+): Promise<IAcademicSemester | null> => {
   const result = await AcademicSemester.findById(id);
+  return result;
+};
+
+
+const updateSemester = async (
+  id: string,
+  paylod: Partial<IAcademicSemester>
+): Promise<IAcademicSemester | null> => {
+  const result = await AcademicSemester.findOneAndUpdate({ _id: id }, paylod,{new:true});
   return result;
 };
 
@@ -110,4 +121,5 @@ export const AcademicSemesterService = {
   createSemester,
   getAllSemester,
   getSingleSemester,
+  updateSemester,
 };
