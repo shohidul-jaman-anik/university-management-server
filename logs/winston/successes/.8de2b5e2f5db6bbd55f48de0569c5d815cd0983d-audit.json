@@ -304,6 +304,11 @@
             "date": 1688583925347,
             "name": "C:\\Next Level Course\\UniversityManagement\\UniversityManagementServer\\logs\\winston\\successes\\um-2023-07-06-01-success.log",
             "hash": "1816f3733a44e663165514ad1e78b550e858864e8d4f2ebbcdb97f25bda6c9f5"
+        },
+        {
+            "date": 1688587455997,
+            "name": "C:\\Next Level Course\\UniversityManagement\\UniversityManagementServer\\logs\\winston\\successes\\um-2023-07-06-02-success.log",
+            "hash": "7e370380ff62e0a65461e8d726f0bb3dc648e9dbb7023a93db8c84e936933441"
         }
     ],
     "hashType": "sha256"

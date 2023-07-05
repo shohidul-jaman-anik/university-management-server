@@ -51,7 +51,10 @@ const updateAcademicSemesterZodSchema = z
         .optional(),
     }),
   })
-  .refine(data => (data.body.title && data.body.code) ||(!data.body.title && !data.body.title),
+  .refine(
+    data =>
+      (data.body.title && data.body.code) ||
+      (!data.body.title && !data.body.title),
     {
       message: 'Either both title and code should be provided or neither',
     }
