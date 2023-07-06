@@ -34,6 +34,7 @@ const getAllSemesters = catchAsync(async (req: Request, res: Response) => {
   //   sortBy: req.query.sortBy,
   //   sortOrder: req.query.sortOrder,
   // };
+
   const filters = pick(req.query, ['searchTerm', 'title', 'code', 'year']);
 
   const paginationOptions = pick(req.query, paginationFields);
@@ -45,7 +46,7 @@ const getAllSemesters = catchAsync(async (req: Request, res: Response) => {
   sendResponse<IAcademicSemester[]>(res, {
     statusCode: httpStatus.OK,
     success: true,
-    message: 'Semester retirived successfully',
+    message: 'Semester retrieved  successfully',
     meta: result.meta,
     data: result.data,
   });
