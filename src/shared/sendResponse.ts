@@ -33,6 +33,7 @@ type IApiResponse<T> = {
   };
   data?: T | null;
 };
+
 const sendResponse = <T>(res: Response, data: IApiResponse<T>): void => {
   const sendResponse: IApiResponse<T> = {
     statusCode: data.statusCode,

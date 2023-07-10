@@ -2,11 +2,15 @@ import config from '../../../config/index';
 import ApiError from '../../../errors/ApiErro';
 import { IUsers } from './user.interface';
 import { Users } from './user.model';
-import { generateUserId } from './user.utils';
+import { generateFacultyId } from './user.utils';
 
 const createUsers = async (user: IUsers): Promise<IUsers | null> => {
+  const academicSemester = {
+    code: '01',
+    year: '2025',
+  };
   // Auto Generate Incremental id
-  const id = await generateUserId();
+  const id = await generateFacultyId();
 
   user.id = id;
 

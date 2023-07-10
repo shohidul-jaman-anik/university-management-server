@@ -1,0 +1,11 @@
+{
+  level: 'error',
+  message: "🔴 globalErrorHandler ~ Cannot read properties of undefined (reading 'year')",
+  stack: "TypeError: Cannot read properties of undefined (reading 'year')\n" +
+    '    at C:\\Next Level Course\\UniversityManagement\\UniversityManagementServer\\src\\app\\modules\\user\\user.utils.ts:22:40\n' +
+    '    at Generator.next (<anonymous>)\n' +
+    '    at fulfilled (C:\\Next Level Course\\UniversityManagement\\UniversityManagementServer\\src\\app\\modules\\user\\user.utils.ts:6:58)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:95:5)',
+  label: 'UM😊',
+  timestamp: '2023-07-10T17:36:58.219Z'
+}

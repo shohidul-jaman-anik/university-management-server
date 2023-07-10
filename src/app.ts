@@ -4,6 +4,7 @@ const app: Application = express();
 
 import httpStatus from 'http-status';
 import globalErrorHandler from './app/middlewares/globalErrorHandler';
+import { generateFacultyId } from './app/modules/user/user.utils';
 import router from './routes';
 // const port = 5000
 
@@ -42,5 +43,16 @@ app.use((req: Request, res: Response, next: NextFunction) => {
   });
   next();
 });
+
+// const academicSemester = {
+//   code: '01',
+//   year: '2025',
+// };
+
+const testId = async () => {
+  const testId = await generateFacultyId();
+  // console.log(testId, 'iddddddddddd');
+};
+testId();
 
 export default app;
