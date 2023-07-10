@@ -50,6 +50,7 @@ app.use((req: Request, res: Response, next: NextFunction) => {
 // };
 
 const testId = async () => {
+  // eslint-disable-next-line no-unused-vars
   const testId = await generateFacultyId();
   // console.log(testId, 'iddddddddddd');
 };

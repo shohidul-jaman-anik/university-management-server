@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import config from '../../../config/index';
 import ApiError from '../../../errors/ApiErro';
 import { IUsers } from './user.interface';
