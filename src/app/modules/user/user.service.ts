@@ -1,23 +1,38 @@
 /* eslint-disable no-unused-vars */
 import config from '../../../config/index';
 import ApiError from '../../../errors/ApiErro';
+import { AcademicSemester } from '../academicSemester/academicSemesterModel';
+import { IStudent } from '../student/student.interface';
 import { IUsers } from './user.interface';
 import { Users } from './user.model';
-import { generateFacultyId } from './user.utils';
+import { generateStudentId } from './user.utils';
 
-const createUsers = async (user: IUsers): Promise<IUsers | null> => {
-  const academicSemester = {
-    code: '01',
-    year: '2025',
-  };
-  // Auto Generate Incremental id
-  const id = await generateFacultyId();
+const createStudent = async (
+  student: IStudent,
+  user: IUsers
+): Promise<IUsers | null> => {
+  // const academicSemester = {
+  //   code: '01',
+  //   year: '2025',
+  // };
+  // // Auto Generate Incremental id
+  // const id = await generateFacultyId();
 
-  user.id = id;
+  // user.id = id;
+
+  // set role
+  user.role = 'student';
+
+  const academicSemester = await AcademicSemester.findById(
+    student.academicSemester
+  );
+
+  // Generate Student id
+  const id= await generateStudentId()
 
   // Default Password
   if (!user.password) {
-    user.password = config.default_user_pass as string;
+    user.password = config.default_student_pass as string;
   }
 
   const createUser = await Users.create(user);
@@ -29,5 +44,5 @@ const createUsers = async (user: IUsers): Promise<IUsers | null> => {
 };
 
 export const UserService = {
-  createUsers,
+  createStudent,
 };
