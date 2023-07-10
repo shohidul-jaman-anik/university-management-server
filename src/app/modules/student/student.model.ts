@@ -1,6 +1,8 @@
 import { Schema, model } from 'mongoose';
+import { bloodGroup, gender } from './student.constant';
+import { IStudent, StudentModel } from './student.interface';
 
-export const studentSchema = new Schema(
+export const studentSchema = new Schema<IStudent, StudentModel>(
   {
     id: {
       type: String,
@@ -9,7 +11,7 @@ export const studentSchema = new Schema(
     },
     name: {
       type: {
-        filrstName: {
+        firstName: {
           type: String,
           required: true,
         },
@@ -28,11 +30,11 @@ export const studentSchema = new Schema(
     },
     gender: {
       type: String,
-      enum: ['male', 'female'],
+      enum: gender,
     },
     bloodGroup: {
       type: String,
-      enum: ['A+', 'A-', 'B+', 'B-', 'AB+', 'AB-', 'O+', 'O-'],
+      enum: bloodGroup,
     },
     email: {
       type: String,
@@ -56,7 +58,7 @@ export const studentSchema = new Schema(
       type: String,
       required: true,
     },
-    gurdian: {
+    guardian: {
       required: true,
       type: {
         fatherName: {
@@ -89,7 +91,7 @@ export const studentSchema = new Schema(
         },
       },
     },
-    localGurdian: {
+    localGuardian: {
       required: true,
       type: {
         name: {
@@ -110,10 +112,6 @@ export const studentSchema = new Schema(
         },
       },
     },
-    profileImg: {
-      type: String,
-      required: true,
-    },
     academicFaculty: {
       type: Schema.Types.ObjectId,
       ref: 'AcademicFaculty',
@@ -129,6 +127,9 @@ export const studentSchema = new Schema(
       ref: 'AcademicSemester',
       required: true,
     },
+    profileImage: {
+      type: String,
+    },
   },
   {
     timestamps: true,
@@ -138,4 +139,4 @@ export const studentSchema = new Schema(
   }
 );
 
-export const Student = model('Student', studentSchema);
+export const Student = model<IStudent, StudentModel>('Student', studentSchema);
