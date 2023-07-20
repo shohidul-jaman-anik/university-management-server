@@ -5,7 +5,7 @@ const app: Application = express();
 import httpStatus from 'http-status';
 import globalErrorHandler from './app/middlewares/globalErrorHandler';
 import { generateFacultyId } from './app/modules/user/user.utils';
-import router from './routes';
+import router from './app/routes';
 // const port = 5000
 
 app.use(cors());

@@ -28,7 +28,7 @@ const createStudent = async (
   );
 
   // Generate Student id
-  const id= await generateStudentId()
+  const id = await generateStudentId();
 
   // Default Password
   if (!user.password) {

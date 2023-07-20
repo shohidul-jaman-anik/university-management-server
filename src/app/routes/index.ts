@@ -1,8 +1,8 @@
 import express from 'express';
-import { AcademicFacultyRoutes } from '../app/modules/academicFaculty/academicFaculty.routes';
-import { AcademicSemesterRoutes } from '../app/modules/academicSemester/academicSemester.route';
-import { UserRoutes } from '../app/modules/user/user.route';
-import { AcademicDepartmentRoutes } from '../app/modules/academicDepartment/academicDepartment.routes';
+import { AcademicDepartmentRoutes } from '../modules/academicDepartment/academicDepartment.routes';
+import { AcademicFacultyRoutes } from '../modules/academicFaculty/academicFaculty.routes';
+import { AcademicSemesterRoutes } from '../modules/academicSemester/academicSemester.route';
+import { UserRoutes } from '../modules/user/user.route';
 
 const router = express.Router();
 
