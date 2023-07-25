@@ -1,0 +1,68 @@
+{
+  level: 'error',
+  message: "🔴 globalErrorHandler ~ Cannot read properties of undefined (reading 'academicSemester')",
+  stack: "TypeError: Cannot read properties of undefined (reading 'academicSemester')\n" +
+    '    at C:\\Next Level Course\\UniversityManagement\\UniversityManagementServer\\src\\app\\modules\\user\\user.service.ts:27:13\n' +
+    '    at Generator.next (<anonymous>)\n' +
+    '    at C:\\Next Level Course\\UniversityManagement\\UniversityManagementServer\\src\\app\\modules\\user\\user.service.ts:8:71\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at __awaiter (C:\\Next Level Course\\UniversityManagement\\UniversityManagementServer\\src\\app\\modules\\user\\user.service.ts:4:12)\n' +
+    '    at Object.createStudent (C:\\Next Level Course\\UniversityManagement\\UniversityManagementServer\\src\\app\\modules\\user\\user.service.ts:13:29)\n' +
+    '    at C:\\Next Level Course\\UniversityManagement\\UniversityManagementServer\\src\\app\\modules\\user\\user.controller.ts:9:36\n' +
+    '    at Generator.next (<anonymous>)\n' +
+    '    at C:\\Next Level Course\\UniversityManagement\\UniversityManagementServer\\src\\app\\modules\\user\\user.controller.ts:8:71\n' +
+    '    at new Promise (<anonymous>)',
+  label: 'UM😊',
+  timestamp: '2023-07-25T13:02:44.645Z'
+}
+{
+  level: 'error',
+  message: "🔴 globalErrorHandler ~ Cannot read properties of undefined (reading 'academicSemester')",
+  stack: "TypeError: Cannot read properties of undefined (reading 'academicSemester')\n" +
+    '    at C:\\Next Level Course\\UniversityManagement\\UniversityManagementServer\\src\\app\\modules\\user\\user.service.ts:27:13\n' +
+    '    at Generator.next (<anonymous>)\n' +
+    '    at C:\\Next Level Course\\UniversityManagement\\UniversityManagementServer\\src\\app\\modules\\user\\user.service.ts:8:71\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at __awaiter (C:\\Next Level Course\\UniversityManagement\\UniversityManagementServer\\src\\app\\modules\\user\\user.service.ts:4:12)\n' +
+    '    at Object.createStudent (C:\\Next Level Course\\UniversityManagement\\UniversityManagementServer\\src\\app\\modules\\user\\user.service.ts:13:29)\n' +
+    '    at C:\\Next Level Course\\UniversityManagement\\UniversityManagementServer\\src\\app\\modules\\user\\user.controller.ts:9:36\n' +
+    '    at Generator.next (<anonymous>)\n' +
+    '    at C:\\Next Level Course\\UniversityManagement\\UniversityManagementServer\\src\\app\\modules\\user\\user.controller.ts:8:71\n' +
+    '    at new Promise (<anonymous>)',
+  label: 'UM😊',
+  timestamp: '2023-07-25T13:50:10.429Z'
+}
+{
+  level: 'error',
+  message: "🔴 globalErrorHandler ~ Cannot read properties of undefined (reading 'academicSemester')",
+  stack: "TypeError: Cannot read properties of undefined (reading 'academicSemester')\n" +
+    '    at C:\\Next Level Course\\UniversityManagement\\UniversityManagementServer\\src\\app\\modules\\user\\user.service.ts:27:13\n' +
+    '    at Generator.next (<anonymous>)\n' +
+    '    at C:\\Next Level Course\\UniversityManagement\\UniversityManagementServer\\src\\app\\modules\\user\\user.service.ts:8:71\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at __awaiter (C:\\Next Level Course\\UniversityManagement\\UniversityManagementServer\\src\\app\\modules\\user\\user.service.ts:4:12)\n' +
+    '    at Object.createStudent (C:\\Next Level Course\\UniversityManagement\\UniversityManagementServer\\src\\app\\modules\\user\\user.service.ts:13:29)\n' +
+    '    at C:\\Next Level Course\\UniversityManagement\\UniversityManagementServer\\src\\app\\modules\\user\\user.controller.ts:9:36\n' +
+    '    at Generator.next (<anonymous>)\n' +
+    '    at C:\\Next Level Course\\UniversityManagement\\UniversityManagementServer\\src\\app\\modules\\user\\user.controller.ts:8:71\n' +
+    '    at new Promise (<anonymous>)',
+  label: 'UM😊',
+  timestamp: '2023-07-25T13:56:38.424Z'
+}
+{
+  level: 'error',
+  message: "🔴 globalErrorHandler ~ Cannot read properties of undefined (reading 'academicSemester')",
+  stack: "TypeError: Cannot read properties of undefined (reading 'academicSemester')\n" +
+    '    at C:\\Next Level Course\\UniversityManagement\\UniversityManagementServer\\src\\app\\modules\\user\\user.service.ts:27:13\n' +
+    '    at Generator.next (<anonymous>)\n' +
+    '    at C:\\Next Level Course\\UniversityManagement\\UniversityManagementServer\\src\\app\\modules\\user\\user.service.ts:8:71\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at __awaiter (C:\\Next Level Course\\UniversityManagement\\UniversityManagementServer\\src\\app\\modules\\user\\user.service.ts:4:12)\n' +
+    '    at Object.createStudent (C:\\Next Level Course\\UniversityManagement\\UniversityManagementServer\\src\\app\\modules\\user\\user.service.ts:13:29)\n' +
+    '    at C:\\Next Level Course\\UniversityManagement\\UniversityManagementServer\\src\\app\\modules\\user\\user.controller.ts:9:36\n' +
+    '    at Generator.next (<anonymous>)\n' +
+    '    at C:\\Next Level Course\\UniversityManagement\\UniversityManagementServer\\src\\app\\modules\\user\\user.controller.ts:8:71\n' +
+    '    at new Promise (<anonymous>)',
+  label: 'UM😊',
+  timestamp: '2023-07-25T13:56:41.339Z'
+}

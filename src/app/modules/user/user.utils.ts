@@ -38,7 +38,7 @@ export const findLastFacultyId = async (): Promise<string | undefined> => {
     .lean();
   return lastFaculty?.id ? lastFaculty.id.substring(3) : undefined;
 };
-
+// F-00001
 export const generateFacultyId = async (): Promise<string> => {
   const currentId =
     (await findLastFacultyId()) || (0).toString().padStart(5, '0');

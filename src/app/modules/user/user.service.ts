@@ -5,7 +5,7 @@ import { AcademicSemester } from '../academicSemester/academicSemesterModel';
 import { IStudent } from '../student/student.interface';
 import { IUsers } from './user.interface';
 import { Users } from './user.model';
-import { generateStudentId } from './user.utils';
+import { generateFacultyId, generateStudentId } from './user.utils';
 
 const createStudent = async (
   student: IStudent,
@@ -28,7 +28,7 @@ const createStudent = async (
   );
 
   // Generate Student id
-  const id = await generateStudentId();
+  const id = await generateFacultyId();
 
   // Default Password
   if (!user.password) {
