@@ -24,7 +24,7 @@ const createStudent = async (
   const academicSemester = await AcademicSemester.findById(
     student.academicSemester
   );
-  console.log(academicSemester,"academic")
+  console.log(academicSemester, 'academic');
 
   let newUserAllData = null;
   const session = await mongoose.startSession();
@@ -33,10 +33,10 @@ const createStudent = async (
 
     // Generate Student id
     const id = await generateStudentId(academicSemester as IAcademicSemester);
-    console.log(id,"student id")
+    console.log(id, 'student id');
     // set custom id into both  student & user
-    user.id = id as string ;
-    student.id = id as string ;
+    user.id = id as string;
+    student.id = id as string;
 
     const newStudent = await Student.create([student], { session });
 
@@ -62,8 +62,7 @@ const createStudent = async (
     throw error;
   }
   if (newUserAllData) {
-    newUserAllData = await Users.findOne({ id: newUserAllData.id })
-    .populate({
+    newUserAllData = await Users.findOne({ id: newUserAllData.id }).populate({
       path: 'student',
       populate: [
         {
