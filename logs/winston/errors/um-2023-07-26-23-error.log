@@ -1,0 +1,60 @@
+{
+  index: 0,
+  code: 11000,
+  keyPattern: { email: 1 },
+  keyValue: { email: 'john@example.com' },
+  level: 'error',
+  message: '🔴 globalErrorHandler ~ E11000 duplicate key error collection: university-management.students index: email_1 dup key: { email: "john@example.com" }',
+  stack: 'MongoServerError: E11000 duplicate key error collection: university-management.students index: email_1 dup key: { email: "john@example.com" }\n' +
+    '    at C:\\Next Level Course\\UniversityManagement\\UniversityManagementServer\\node_modules\\mongodb\\src\\operations\\insert.ts:85:25\n' +
+    '    at C:\\Next Level Course\\UniversityManagement\\UniversityManagementServer\\node_modules\\mongodb\\src\\cmap\\connection_pool.ts:574:11\n' +
+    '    at C:\\Next Level Course\\UniversityManagement\\UniversityManagementServer\\node_modules\\mongodb\\src\\sdam\\server.ts:368:13\n' +
+    '    at handleOperationResult (C:\\Next Level Course\\UniversityManagement\\UniversityManagementServer\\node_modules\\mongodb\\src\\sdam\\server.ts:502:14)\n' +
+    '    at Connection.onMessage (C:\\Next Level Course\\UniversityManagement\\UniversityManagementServer\\node_modules\\mongodb\\src\\cmap\\connection.ts:418:5)\n' +
+    '    at MessageStream.<anonymous> (C:\\Next Level Course\\UniversityManagement\\UniversityManagementServer\\node_modules\\mongodb\\src\\cmap\\connection.ts:243:56)\n' +
+    '    at MessageStream.emit (node:events:527:28)\n' +
+    '    at processIncomingData (C:\\Next Level Course\\UniversityManagement\\UniversityManagementServer\\node_modules\\mongodb\\src\\cmap\\message_stream.ts:187:12)\n' +
+    '    at MessageStream._write (C:\\Next Level Course\\UniversityManagement\\UniversityManagementServer\\node_modules\\mongodb\\src\\cmap\\message_stream.ts:68:5)\n' +
+    '    at writeOrBuffer (node:internal/streams/writable:389:12)',
+  label: 'UM😊',
+  timestamp: '2023-07-26T17:02:49.537Z',
+  [Symbol(errorLabels)]: Set(0) {}
+}
+{
+  level: 'error',
+  message: `🔴 globalErrorHandler ~ Schema hasn't been registered for model "AcademicSemester".\n` +
+    'Use mongoose.model(name, schema)',
+  stack: `MissingSchemaError: Schema hasn't been registered for model "AcademicSemester".\n` +
+    'Use mongoose.model(name, schema)\n' +
+    '    at NativeConnection.Connection.model (C:\\Next Level Course\\UniversityManagement\\UniversityManagementServer\\node_modules\\mongoose\\lib\\connection.js:1287:13)\n' +
+    '    at _getModelFromConn (C:\\Next Level Course\\UniversityManagement\\UniversityManagementServer\\node_modules\\mongoose\\lib\\helpers\\populate\\getModelsMapForPopulate.js:580:15)\n' +
+    '    at addModelNamesToMap (C:\\Next Level Course\\UniversityManagement\\UniversityManagementServer\\node_modules\\mongoose\\lib\\helpers\\populate\\getModelsMapForPopulate.js:508:17)\n' +
+    '    at getModelsMapForPopulate (C:\\Next Level Course\\UniversityManagement\\UniversityManagementServer\\node_modules\\mongoose\\lib\\helpers\\populate\\getModelsMapForPopulate.js:199:7)\n' +
+    '    at populate (C:\\Next Level Course\\UniversityManagement\\UniversityManagementServer\\node_modules\\mongoose\\lib\\model.js:4243:21)\n' +
+    '    at _populate (C:\\Next Level Course\\UniversityManagement\\UniversityManagementServer\\node_modules\\mongoose\\lib\\model.js:4203:5)\n' +
+    '    at C:\\Next Level Course\\UniversityManagement\\UniversityManagementServer\\node_modules\\mongoose\\lib\\model.js:4175:5\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at Function.populate (C:\\Next Level Course\\UniversityManagement\\UniversityManagementServer\\node_modules\\mongoose\\lib\\model.js:4174:10)\n' +
+    '    at model.Query._find (C:\\Next Level Course\\UniversityManagement\\UniversityManagementServer\\node_modules\\mongoose\\lib\\query.js:2294:20)',
+  label: 'UM😊',
+  timestamp: '2023-07-26T17:03:10.726Z'
+}
+{
+  level: 'error',
+  message: `🔴 globalErrorHandler ~ Schema hasn't been registered for model "AcademicSemester".\n` +
+    'Use mongoose.model(name, schema)',
+  stack: `MissingSchemaError: Schema hasn't been registered for model "AcademicSemester".\n` +
+    'Use mongoose.model(name, schema)\n' +
+    '    at NativeConnection.Connection.model (C:\\Next Level Course\\UniversityManagement\\UniversityManagementServer\\node_modules\\mongoose\\lib\\connection.js:1287:13)\n' +
+    '    at _getModelFromConn (C:\\Next Level Course\\UniversityManagement\\UniversityManagementServer\\node_modules\\mongoose\\lib\\helpers\\populate\\getModelsMapForPopulate.js:580:15)\n' +
+    '    at addModelNamesToMap (C:\\Next Level Course\\UniversityManagement\\UniversityManagementServer\\node_modules\\mongoose\\lib\\helpers\\populate\\getModelsMapForPopulate.js:508:17)\n' +
+    '    at getModelsMapForPopulate (C:\\Next Level Course\\UniversityManagement\\UniversityManagementServer\\node_modules\\mongoose\\lib\\helpers\\populate\\getModelsMapForPopulate.js:199:7)\n' +
+    '    at populate (C:\\Next Level Course\\UniversityManagement\\UniversityManagementServer\\node_modules\\mongoose\\lib\\model.js:4243:21)\n' +
+    '    at _populate (C:\\Next Level Course\\UniversityManagement\\UniversityManagementServer\\node_modules\\mongoose\\lib\\model.js:4203:5)\n' +
+    '    at C:\\Next Level Course\\UniversityManagement\\UniversityManagementServer\\node_modules\\mongoose\\lib\\model.js:4175:5\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at Function.populate (C:\\Next Level Course\\UniversityManagement\\UniversityManagementServer\\node_modules\\mongoose\\lib\\model.js:4174:10)\n' +
+    '    at model.Query._find (C:\\Next Level Course\\UniversityManagement\\UniversityManagementServer\\node_modules\\mongoose\\lib\\query.js:2294:20)',
+  label: 'UM😊',
+  timestamp: '2023-07-26T17:05:29.855Z'
+}

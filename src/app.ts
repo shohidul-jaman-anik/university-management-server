@@ -4,7 +4,6 @@ const app: Application = express();
 
 import httpStatus from 'http-status';
 import globalErrorHandler from './app/middlewares/globalErrorHandler';
-import { generateFacultyId } from './app/modules/user/user.utils';
 import router from './app/routes';
 // const port = 5000
 
@@ -49,11 +48,11 @@ app.use((req: Request, res: Response, next: NextFunction) => {
 //   year: '2025',
 // };
 
-const testId = async () => {
-  // eslint-disable-next-line no-unused-vars
-  const testId = await generateFacultyId();
-  // console.log(testId, 'iddddddddddd');
-};
-testId();
+// const testId = async () => {
+//   // eslint-disable-next-line no-unused-vars
+//   const testId = await generateFacultyId();
+//   // console.log(testId, 'iddddddddddd');
+// };
+// testId();
 
 export default app;

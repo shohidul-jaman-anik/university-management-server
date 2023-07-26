@@ -124,7 +124,7 @@ export const studentSchema = new Schema<IStudent, StudentModel>(
     },
     academicSemester: {
       type: Schema.Types.ObjectId,
-      ref: 'AcademicSemester',
+      ref: 'AcademicSemeter',
       required: true,
     },
     profileImage: {
