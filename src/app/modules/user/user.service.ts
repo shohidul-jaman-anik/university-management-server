@@ -61,6 +61,7 @@ const createStudent = async (
 
     throw error;
   }
+  
   if (newUserAllData) {
     newUserAllData = await Users.findOne({ id: newUserAllData.id }).populate({
       path: 'student',
