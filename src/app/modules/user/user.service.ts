@@ -11,7 +11,11 @@ import { IStudent } from '../student/student.interface';
 import { Student } from '../student/student.model';
 import { IUsers } from './user.interface';
 import { Users } from './user.model';
-import { generateAdminId, generateFacultyId, generateStudentId } from './user.utils';
+import {
+  generateAdminId,
+  generateFacultyId,
+  generateStudentId,
+} from './user.utils';
 import { IAdmin } from '../admin/admin.interface';
 import { Admin } from '../admin/admin.model';
 
