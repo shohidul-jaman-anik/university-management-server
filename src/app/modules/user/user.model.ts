@@ -13,6 +13,7 @@ const userSchema = new Schema<IUsers>(
     role: {
       type: String,
       required: true,
+      select: 0,
     },
     password: {
       type: String,
