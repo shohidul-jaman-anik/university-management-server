@@ -1,10 +1,13 @@
 /* eslint-disable no-unused-vars */
+
 import httpStatus from 'http-status';
 import mongoose from 'mongoose';
 import config from '../../../config/index';
 import ApiError from '../../../errors/ApiErro';
 import { IAcademicSemester } from '../academicSemester/academicSemester.interface';
 import { AcademicSemester } from '../academicSemester/academicSemesterModel';
+import { IAdmin } from '../admin/admin.interface';
+import { Admin } from '../admin/admin.model';
 import { IFaculty } from '../faculty/faculty.interface';
 import { Faculty } from '../faculty/faculty.model';
 import { IStudent } from '../student/student.interface';
@@ -16,8 +19,6 @@ import {
   generateFacultyId,
   generateStudentId,
 } from './user.utils';
-import { IAdmin } from '../admin/admin.interface';
-import { Admin } from '../admin/admin.model';
 
 const createStudent = async (
   student: IStudent,
@@ -27,6 +28,7 @@ const createStudent = async (
   if (!user.password) {
     user.password = config.default_student_pass as string;
   }
+
   user.role = 'student';
 
   const academicSemester = await AcademicSemester.findById(
